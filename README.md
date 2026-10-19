@@ -2,11 +2,13 @@
 
 > **Türkçe:** [README_TR.md](./README_TR.md)
 
+[![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](LICENSE)
+
 **Grand Proof I: Dark-Matter-Free Galactic Dynamics, the Meral Cosmic Acceleration Scale, SPARC Rotation Curves, and EHT Black-Hole Ring Evidence**
 
 Author: Fahri Meral · Date: October 19, 2026 · Version: v1 (Grand Proof I)
 
-> **Status:** Unpublished preprint (v1). Not peer-reviewed.
+> **Status:** Unpublished preprint (v1). Not peer-reviewed. *Zenodo DOI pending deposit.*
 
 ## Contents
 
@@ -21,12 +23,25 @@ Author: Fahri Meral · Date: October 19, 2026 · Version: v1 (Grand Proof I)
 | `CITATION.cff` | Citation record |
 | `LICENSE` | CC BY 4.0 |
 
-## Results (zero free parameters)
+## Key findings
 
-- Meral scale `a_Meral = 1.146589e-10 m/s²` vs SPARC `a_0 = 1.20e-10` (4.45%, 0.22σ_sys).
-- BTFR slope exactly 4.000000000000000 (R² = 1.0); 5 SPARC archetypes mean 4.54%
-  (UGC 2885 is an openly reported 12.9% outlier).
-- EHT rings: Sgr A* 50.31 μas (0.65σ), M87* 38.31 μas (1.23σ).
+- **T29 (Theorem GP-I.1):** zero-parameter Meral cosmic acceleration scale
+  `a_Meral = µ_s^Meral (1-η_T0) c H_0 = 1.1465889797e-10 m/s²`
+  (Planck 2018 `H_0 = 67.4`), i.e. the model predicts the **dimensionless ratio**
+  `κ_Meral = a_0/(cH_0) = 0.175097`. The comparison to the SPARC
+  `a_0 = (1.20 ± 0.02 ± 0.24)e-10` is 4.45 % (0.22 σ_sys) with Planck and
+  0.06 % with the local `H_0 = 70.5` — the test therefore carries the adopted
+  `H_0` and shows *consistency*, not an `H_0`-independent absolute scale.
+- **T29/T30 (Theorem GP-I.2):** string-loop radial acceleration relation
+  `g_obs = g_bar[1+(x+x²)^(-1/2)]`, `x = g_bar/a_Meral`, gives the outer-halo
+  law `v_flat⁴ = G M_b a_Meral` with log-log slope **4.000000000000000**
+  (`R² = 1.0`) and a 4.54 % mean deviation over five SPARC archetypes
+  (four below 4.1 %; the giant spiral UGC 2885 is an openly reported 12.9 %
+  outlier).
+- **T31 (Theorem GP-I.3):** EHT ring saturation
+  `d_ring = 6 θ_g C_univ √(1+µ_s/4) = 10.002404 θ_g`, predicting
+  50.31 μas for Sgr A* (0.65 σ) and 38.31 μas for M87* (1.23 σ) against the
+  51.8 ± 2.3 μas and 42.0 ± 3.0 μas measurements.
 
 ## Numerical reproduction
 
@@ -36,9 +51,32 @@ Tests T29–T31 are produced with the solver in the **Paper V repository**
 ```bash
 git clone https://github.com/fahrim/stationary-strings-v
 pip install numpy scipy matplotlib
-python duran_sicimler_sim/solver_engine.py   # T1–T31 (31/31 PASS)
-python duran_sicimler_sim/mini_check_gp1.py  # independent cross-check (15/15 PASS)
+python duran_sicimler_sim/solver_engine.py     # T1–T31 (31/31 PASS)
+python duran_sicimler_sim/mini_check_gp1.py    # independent cross-check (15/15 PASS)
 ```
 
-The independent cross-check never imports the solver.
-Figure 1 is produced by the `fig13` function in `generate_figures.py`.
+The independent cross-check never imports the solver. Figure 1 is produced by
+the `fig13` function in `duran_sicimler_sim/generate_figures.py`.
+
+## Citation
+
+```bibtex
+@misc{meral2026grandproofi,
+  author = {Fahri Meral},
+  title  = {Grand Proof I: Dark-Matter-Free Galactic Dynamics, the Meral Cosmic Acceleration Scale, SPARC Rotation Curves, and EHT Black-Hole Ring Evidence},
+  year   = {2026},
+  url    = {https://github.com/fahrim/grand-proof-i}
+}
+```
+
+See also `CITATION.cff`.
+
+## Related work
+
+- `stationary-strings-i` … `stationary-strings-x` — Theorems I–X (the parent series).
+- `grand-proof-ii` — Yang–Mills mass gap, glueball spectrum, quark confinement.
+- `grand-proof-iii` — Benchtop vortex PIV, Vela glitches, Na-22 positronium.
+
+## License
+
+CC BY 4.0 — see `LICENSE`. Content is not peer-reviewed.

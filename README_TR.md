@@ -2,11 +2,13 @@
 
 > **English:** [README.md](./README.md)
 
+[![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](LICENSE)
+
 **Grand Proof I: Karanlık-Maddesiz Galaktik Dinamik, Meral Kozmik İvme Ölçeği, SPARC Dönüş Eğrileri ve EHT Karadelik Halka Kanıtı**
 
 Yazar: Fahri Meral · Tarih: 19 Ekim 2026 · Sürüm: v1 (Grand Proof I)
 
-> **Durum:** Yayımlanmamış ön-baskı (v1). Hakem denetiminden geçmemiştir.
+> **Durum:** Yayımlanmamış ön-baskı (v1). Hakem denetiminden geçmemiştir. *Zenodo DOI'si yüklemeyi bekliyor.*
 
 ## İçerik
 
@@ -21,12 +23,25 @@ Yazar: Fahri Meral · Tarih: 19 Ekim 2026 · Sürüm: v1 (Grand Proof I)
 | `CITATION.cff` | Atıf kaydı |
 | `LICENSE` | CC BY 4.0 |
 
-## Sonuçlar (sıfır serbest parametre)
+## Ana bulgular
 
-- Meral ölçeği `a_Meral = 1,146589e-10 m/s²`, SPARC `a_0 = 1,20e-10` ile %4,45 fark (0,22σ_sys).
-- BTFR eğimi tam 4,000000000000000 (R² = 1,0); 5 SPARC arketipinde ortalama %4,54
-  (UGC 2885 açıkça raporlanan %12,9 dış-değerdir).
-- EHT halkaları: Sgr A* 50,31 μas (0,65σ), M87* 38,31 μas (1,23σ).
+- **T29 (Teorem GP-I.1):** sıfır-parametreli Meral kozmik ivme ölçeği
+  `a_Meral = µ_s^Meral (1-η_T0) c H_0 = 1,1465889797e-10 m/s²`
+  (Planck 2018 `H_0 = 67,4`), yani model **boyutsuz oran**
+  `κ_Meral = a_0/(cH_0) = 0,175097` öngörür. SPARC `a_0 =
+  (1,20 ± 0,02 ± 0,24)e-10` ile karşılaştırma Planck'ta %4,45
+  (0,22σ_sys), yerel `H_0 = 70,5`'te %0,06'dır — test benimsenen `H_0`'ı
+  taşır ve **mutlak, `H_0`'dan bağımsız bir ölçek doğrulaması değil,
+  tutarlılık** gösterir.
+- **T29/T30 (Teorem GP-I.2):** sicim-çember RAR'ı
+  `g_obs = g_bar[1+(x+x²)^(-1/2)]`, `x = g_bar/a_Meral`, dış-halo yasası
+  `v_flat⁴ = G M_b a_Meral` ve log-log eğimi **4,000000000000000**
+  (`R² = 1,0`); beş SPARC arketipinde ortalama %4,54 sapma (dördü %4,1'in
+  altında; dev sarmal UGC 2885 açıkça raporlanan %12,9 dış-değerdir).
+- **T31 (Teorem GP-I.3):** EHT halka doyumu
+  `d_ring = 6 θ_g C_univ √(1+µ_s/4) = 10,002404 θ_g`; Sgr A* için
+  50,31 μas (0,65σ), M87* için 38,31 μas (1,23σ) — ölçümler sırasıyla
+  51,8 ± 2,3 ve 42,0 ± 3,0 μas.
 
 ## Sayısal yeniden-üretim
 
@@ -36,9 +51,32 @@ T29–T31 testleri **Makale V deposundaki** çözücüyle üretilir
 ```bash
 git clone https://github.com/fahrim/stationary-strings-v
 pip install numpy scipy matplotlib
-python duran_sicimler_sim/solver_engine.py   # T1–T31 (31/31 PASS)
-python duran_sicimler_sim/mini_check_gp1.py  # bağımsız çapraz kontrol (15/15 PASS)
+python duran_sicimler_sim/solver_engine.py     # T1–T31 (31/31 PASS)
+python duran_sicimler_sim/mini_check_gp1.py    # bağımsız çapraz kontrol (15/15 PASS)
 ```
 
-Bağımsız çapraz kontrol çözücüyü import etmez.
-Şekil 1, `generate_figures.py` içindeki `fig13` işleviyle üretilir.
+Bağımsız çapraz kontrol çözücüyü import etmez. Şekil 1,
+`duran_sicimler_sim/generate_figures.py` içindeki `fig13` işleviyle üretilir.
+
+## Atıf
+
+```bibtex
+@misc{meral2026grandproofi,
+  author = {Fahri Meral},
+  title  = {Grand Proof I: Karanlık-Maddesiz Galaktik Dinamik, Meral Kozmik İvme Ölçeği, SPARC Dönüş Eğrileri ve EHT Karadelik Halka Kanıtı},
+  year   = {2026},
+  url    = {https://github.com/fahrim/grand-proof-i}
+}
+```
+
+Ayrıca bkz. `CITATION.cff`.
+
+## İlgili çalışmalar
+
+- `stationary-strings-i` … `stationary-strings-x` — Teoremler I–X (ana seri).
+- `grand-proof-ii` — Yang–Mills kütle aralığı, glueball spektrumu, kuark kuşatması.
+- `grand-proof-iii` — Masaüstü girdap PIV, Vela glitch, Na-22 pozitronyum.
+
+## Lisans
+
+CC BY 4.0 — bkz. `LICENSE`. İçerik hakem denetiminden geçmemiştir.

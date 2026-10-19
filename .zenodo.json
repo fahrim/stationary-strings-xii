@@ -1,21 +1,21 @@
 {
   "title": "Grand Proof I: Dark-Matter-Free Galactic Dynamics, the Meral Cosmic Acceleration Scale, SPARC Rotation Curves, and EHT Black-Hole Ring Evidence",
-  "description": "Zero-free-parameter derivation of the galactic acceleration scale, SPARC rotation curves without dark matter, and EHT ring saturation (Tests T29-T31).",
+  "description": "First link of the Grand Proof series (October 2026): zero-parameter Meral cosmic acceleration scale a_Meral = mu_s (1-eta) c H_0 and the string-loop radial acceleration relation with baryonic Tully-Fisher slope 4 (Theorem GP-I.1-GP-I.2, Tests T29-T30), Event Horizon Telescope black-hole ring saturation d_ring = 6 theta_g C_univ sqrt(1+mu_s/4) = 10.002404 theta_g for Sgr A* and M87* (Theorem GP-I.3, Test T31), and an independent 15-point cross-check. Full paper in Turkish and English. Tests T29-T31 run with the solver in the Paper V repository (stationary-strings-v).",
   "creators": [
     {
       "name": "Meral, Fahri"
     }
   ],
+  "license": {
+    "id": "CC-BY-4.0"
+  },
   "keywords": [
     "dark matter",
     "galactic dynamics",
     "radial acceleration relation",
-    "Baryonic Tully-Fisher",
+    "baryonic Tully-Fisher",
     "SPARC",
-    "Event Horizon Telescope"
-  ],
-  "license": "cc-by-4.0",
-  "upload_type": "publication",
-  "publication_type": "preprint",
-  "language": "eng"
+    "Event Horizon Telescope",
+    "black hole shadow"
+  ]
 }
