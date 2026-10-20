@@ -8,7 +8,7 @@
 
 Author: Fahri Meral · Date: October 19, 2026 · Version: v1 (Stationary Strings XII)
 
-> **Status:** Unpublished preprint (v1). Not peer-reviewed. *Zenodo DOI pending deposit.*
+> **Status:** Unpublished preprint (v1). Not peer-reviewed. *[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.23517474-blue.svg)](https://doi.org/10.5281/zenodo.23517474)*
 
 ## Contents
 
@@ -66,6 +66,7 @@ the `fig13` function in `duran_sicimler_sim/generate_figures.py`.
   title  = {Stationary Strings XII: Dark-Matter-Free Galactic Dynamics, the Meral Cosmic Acceleration Scale, SPARC Rotation Curves, and EHT Black-Hole Ring Evidence},
   year   = {2026},
   url    = {https://github.com/fahrim/stationary-strings-xii}
+  doi    = {10.5281/zenodo.23517474},
 }
 ```
 
