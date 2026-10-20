@@ -1,5 +1,5 @@
 cff-version: 1.2.0
-title: "Grand Proof I: Dark-Matter-Free Galactic Dynamics, the Meral Cosmic Acceleration Scale, SPARC Rotation Curves, and EHT Black-Hole Ring Evidence"
+title: "Stationary Strings XII: Dark-Matter-Free Galactic Dynamics, the Meral Cosmic Acceleration Scale, SPARC Rotation Curves, and EHT Black-Hole Ring Evidence"
 message: "If you use this work, please cite it."
 type: unpublished
 authors:
@@ -7,7 +7,7 @@ authors:
     given-names: Fahri
 date-released: 2026-10-19
 version: v1
-repository-code: "https://github.com/fahrim/grand-proof-i"
+repository-code: "https://github.com/fahrim/stationary-strings-xii"
 license: CC-BY-4.0
 keywords:
   - dark matter
