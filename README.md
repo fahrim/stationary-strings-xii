@@ -25,7 +25,7 @@ Author: Fahri Meral · Date: October 19, 2026 · Version: v1 (Stationary Strings
 
 ## Key findings
 
-- **T29 (Theorem XII.1):** zero-parameter Meral cosmic acceleration scale
+- **T29 (Theorem XII.1):** Meral cosmic acceleration scale with no new calibration constant
   `a_Meral = µ_s^Meral (1-η_T0) c H_0 = 1.1465889797e-10 m/s²`
   (Planck 2018 `H_0 = 67.4`), i.e. the model predicts the **dimensionless ratio**
   `κ_Meral = a_0/(cH_0) = 0.175097`. The comparison to the SPARC
