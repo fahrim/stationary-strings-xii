@@ -65,7 +65,7 @@ the `fig13` function in `duran_sicimler_sim/generate_figures.py`.
   author = {Fahri Meral},
   title  = {Stationary Strings XII: Dark-Matter-Free Galactic Dynamics, the Meral Cosmic Acceleration Scale, SPARC Rotation Curves, and EHT Black-Hole Ring Evidence},
   year   = {2026},
-  url    = {https://github.com/fahrim/stationary-strings-xii}
+  url    = {https://github.com/fahrim/stationary-strings-xii},
   doi    = {10.5281/zenodo.23517474},
 }
 ```

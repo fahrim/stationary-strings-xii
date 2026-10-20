@@ -65,7 +65,7 @@ Bağımsız çapraz kontrol çözücüyü import etmez. Şekil 1,
   author = {Fahri Meral},
   title  = {Stationary Strings XII: Karanlık-Maddesiz Galaktik Dinamik, Meral Kozmik İvme Ölçeği, SPARC Dönüş Eğrileri ve EHT Karadelik Halka Kanıtı},
   year   = {2026},
-  url    = {https://github.com/fahrim/stationary-strings-xii}
+  url    = {https://github.com/fahrim/stationary-strings-xii},
   doi    = {10.5281/zenodo.23517474},
 }
 ```
